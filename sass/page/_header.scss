@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Header - Header logo and animation; Menu related items in _menu partial
+   ========================================================================== */
+
+#header-logo {
+	position: absolute;
+	top: 0;
+	left: 8.95rem;
+	z-index: 19;
+	height: 4rem;
+	width: 14rem;
+
+	// reposition logo to be centered or left-aligned based on size
+	@include at-least(320px) {
+		left: 50%;
+		@include transform(translateX(-50%));
+	}
+
+	@include at-least(769px) {
+		left: 2rem;
+		height: 5.1rem;
+		width: 34rem;
+		@include transform(none);
+	}
+
+	@include at-least(1025px) {
+		left: 4rem;
+	}
+
+	@include at-least(1281px) {
+		left: 50%;
+		@include transform(translateX(-50%));
+	}
+
+	h1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-indent: -9999px;
+	}
+}
+
+
+/* logos at small and large sizes
+   ========================================================================== */
+#header-logo-small, #header-logo-large {
+	transition: .3s all ease-out;
+
+	a:hover &, a:focus & {
+		stroke-width: 0;
+
+		svg {
+			@include animation-timing-function(ease-out);
+		}
+	}
+}
+
+#header-logo-small {
+	@include at-least(769px) {
+		display: none;
+	}
+
+	a:hover &, a:focus & {
+		#small-inner, #small-outer {
+			@include animation-duration(2s);
+			@include animation-iteration-count(infinite);
+		}
+
+		#small-inner {
+			@include animation-name(small-inner);
+		}
+
+		#small-outer {
+			@include animation-name(small-outer);
+		}
+	}
+}
+
+// animate svg elements
+@include keyframes(small-inner) {
+	0% 		{ stroke-width: 0; }
+	30%		{ stroke-width: 0; }
+	50%		{ stroke-width: 35; }
+	100%	{ stroke-width: 35; }
+}
+
+@include keyframes(small-outer) {
+	0% 		{ stroke-width: 0; }
+	50%		{ stroke-width: 0; }
+	50.1%	{ stroke-width: 35; }
+	85%		{ stroke-width: 70; }
+	100%	{ stroke-width: 70; }
+}
+
+#header-logo-large {
+	@include at-most(768px) {
+		display: none;
+	}
+
+	a:hover &, a:focus & {
+		#large-inner, #large-outer {
+			@include animation-duration(2s);
+			@include animation-iteration-count(infinite);
+		}
+
+		#large-inner {
+			@include animation-name(large-inner);			
+		}
+
+		#large-outer {
+			@include animation-name(large-outer);
+		}
+	}
+}
+
+// animate svg elements
+@include keyframes(large-inner) {
+	0% 		{ stroke-width: 0; }
+	30%		{ stroke-width: 0; }
+	50%		{ stroke-width: 44; }
+	100%	{ stroke-width: 44; }
+}
+
+@include keyframes(large-outer) {
+	0% 		{ stroke-width: 0; }
+	50%		{ stroke-width: 0; }
+	50.1%	{ stroke-width: 44; }
+	85%		{ stroke-width: 88; }
+	100%	{ stroke-width: 88; }
+}

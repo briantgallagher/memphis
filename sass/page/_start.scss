@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Start - Declarations for HTML/non-class/ID elements
+   ========================================================================== */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin: 0 0 5rem;
+	background-color: $color-grey-dark;
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 5rem;
+}
+
+a {
+	color: $color-green;
+
+	&:visited {
+		color: darken($color-green, 15%);
+	}
+}

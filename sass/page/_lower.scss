@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Lower - Below .stripe and above <footer>, contains carousel controls, content, featured work
+   ========================================================================== */
+
+// min-height determined by 100% of viewport height minus
+// (header [4 or 5 rem] + stripe [smallest height used: 40rem] + footer height [5rem])
+.lower {
+	min-height: calc(100vh - 49rem);
+	background-color: $color-grey-dark;
+	background: linear-gradient(141deg, lighten($color-grey-dark, 6.5%) 0%, $color-grey-dark 25%, darken($color-grey-dark, 6.5%) 75%);
+	
+
+	@include at-least(769px) {
+		min-height: calc(100vh - 50rem);
+	}
+}

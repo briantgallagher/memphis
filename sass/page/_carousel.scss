@@ -1,0 +1,261 @@
+/* ==========================================================================
+   Carousel - Flickity Slideshow display
+   ========================================================================== */
+
+   // aspect ratio of the .carousel-item box is (692 / 560) = 1.235714285714286
+   // screenshot dimension examples:
+   //	default (browser window): 1903 x 1019 (1.867517173699706)
+   //	desktop: 1903 x 1019 (1.867517173699706)
+   // 	mobile phone: 375 x 667
+   //	tablet: 768 x 1024
+
+.carousel {
+	overflow: hidden;
+}
+
+
+/* small size of carousel -- do not display frame/mask elements
+   ========================================================================== */
+@include at-most(480px) {
+	.carousel {
+		height: 32rem;
+
+		@include at-least(375px) {
+			height: 34rem;
+		}
+	}
+
+	.carousel-item {
+		@include flex;
+		@include align-items(center);
+		@include justify-content(center);
+		width: 100%;
+		height: 100%;
+
+		// image has white border to stand out from background
+		img {
+			width: 100%;
+			border-top: .4rem solid $color-white;
+			border-bottom: .4rem solid $color-white;
+		}
+
+		&.carousel-item-phone, &.carousel-item-tablet {
+			@include align-items(flex-start);
+			padding-top: 2rem;
+
+			img {
+				border-right: .4rem solid $color-white;
+				border-left: .4rem solid $color-white;
+			}
+		}
+
+		&.carousel-item-phone {
+			img {
+				width: 60%;
+			}
+		}
+
+		&.carousel-item-tablet {
+			img {
+				width: 80%;
+			}
+		}
+	}
+
+	// hide mask and frame
+	.mask, .frame {
+		display: none;
+	}
+
+}
+
+/* larger carousel sizes -- display svg frame and mask, resize/position screenshot
+   ========================================================================== */
+@include at-least(481px) {
+	.carousel {
+		height: 21rem;
+		margin-top: 1.5rem;
+	}
+
+	.carousel-item {
+		overflow: hidden;
+		position: relative;
+		// 21 * 1.235714285714286 = 25.95000000000001
+		width: 25.95000000000001rem;
+		height: 100%;
+		margin-right: 8rem;
+		transition: -webkit-filter .3s ease-out;
+		transition: filter .3s ease-out;
+		@include blur(1px);
+
+		img {
+			position: absolute;
+
+			&.mask {
+				top: 10%;
+				width: 100%;
+			}
+
+			&.screenshot, &.frame {
+				opacity: .3;
+				transition: opacity .3s ease-out;
+			}
+
+			&.screenshot {
+				// top: top of frame .svg (css top:) + ((Y coordinate of frame cut-out top / height of svg frame) * percentage height of frame .svg))
+				// 10% + ((35 / 453.367) * 0.6551546242774565)
+				// 10% + 5.05780346820809 = 15.05780346820809%
+				// left: (X position of cut-out / width of svg frame) * 100
+				// (1.5 / 800) * 100 = 0.1875
+				// width: (width of cut-out / width of svg frame) * 100
+				//(782 / 800) * 100 = 97.75
+				top: 15.05780346820809%;
+				left: 0.1875%;
+				width: 97.75%;
+			}
+
+			&.frame {
+				top: 10%;
+				width: 100%;
+			}
+		}
+
+		&.carousel-item-desktop {
+			.mask, .frame {
+				// top: maximum height of carousel-item (692)
+				// svg frame dimensions: 800 x 625.782
+				// determine maximum height of a div with the frame's width:
+				// frame width / aspect ratio
+				// 800 / 1.235714285714286 = 647.3988439306357
+				// top: 100 - ((frame svg height actual / div hight calculated max) * 100)
+				// 100 - ((625.782 / 647.3988439306357) * 100)
+				// 100 - 96.66096964285716 = 3.33903035714284
+				top: 3.33903035714284%;
+			}
+
+			.screenshot {
+				// top: top of frame .svg (css top:) + ((Y coordinate of frame cut-out top / height of svg frame) * percentage height of frame .svg))
+				// 3.33903035714284 + ((29.59 / 625.782) * 96.66096964285716)
+				// 3.33903035714284 + 4.570598214285715
+				// left: (Y position of cut-out / width of svg frame) * 100
+				// (28.985 / 800) * 100 = 3.623125
+				// width: (width of cut-out / width of svg frame) * 100
+				// (740.82 / 800) * 100
+				top: 7.909628571428555%;
+				left: 3.623125%;
+				width: 92.6025%;
+			}
+		}
+
+		&.carousel-item-phone {
+			.mask, .frame {
+				top: 0;
+				left: 20%;
+				width: 60%;
+			}
+
+			.screenshot {
+				// top: ((Y coordinate of frame cut-out top (outer edge) / height of frame .svg) * 100) / (height of frame visible / height of fame total)
+				// ((42.437 / 378.482) * 100) / (560 / 787)
+				// 11.21242225521953 / 0.7115628970775095
+				// left: css left: + (((X coordinate of cut-out / width of cutout) * 100) * frame css width: %)
+				// 20% + (((18.103 / 200) * 100) * .6) = 25.4309
+				// width: (((width of frame cutout / width of frame) * 100) * frame css width: %)
+				// (((163.793 / 200) * 100) * .6) = 49.1379
+				top: 15.75745770510317%;
+				left: 25.4309%;
+				width: 49.1379%;
+			}
+		}
+
+		&.carousel-item-tablet {
+			.mask, .frame {
+				top: 0;
+				left: 12.5%;
+				width: 75%;
+			}
+
+			.screenshot {
+				// top: (((Y coordinate of frame cut-out top (outer edge) / height of frame .svg) * 100) / (height of frame visible max / height of fame max)
+				// ((48.114 / 455.66) * 100) / (560 / 789)
+				// 10.55918886889347 / 0.7097591888466413 = 14.87714288849455
+				// left: css left: + (((X coordinate of cut-out / width of cutout) * 100) * frame css width: %)
+				// 12.5% + (((15.874 / 300) * 100) * .75) = 16.4685
+				// width: (((width of frame cutout / width of frame) * 100) * frame css width: %)
+				// (((268.254 / 300) * 100) * .75) = 67.0635
+				top: 14.87714288849455%;
+				left: 16.4685%;
+				width: 67.0635%;
+			}
+		}
+
+		&.is-selected {
+			// remove blur and show selected item at full opacity
+			@include filter(initial);
+
+			.screenshot, .frame {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+/* increase size of carousel as screens get larger -- width = height * aspect ratio (1.235714285714286)
+   ========================================================================== */
+@include at-least(600px) {
+	.carousel {
+		height: 32rem;
+		margin-top: 2rem;
+	}
+
+	.carousel-item {
+		// 32 * 1.235714285714286 = 39.54285714285715
+		width: 39.54285714285715rem;
+	}
+}
+
+
+@include at-least(769px) {
+	.carousel {
+		height: 40rem;
+		margin-top: 2.5rem;
+	}
+
+	.carousel-item {
+		// 40 * 1.235714285714286 = 49.42857142857144
+		width: 49.42857142857144rem;
+	}
+}
+
+@include at-least(1000px) {
+	.carousel {
+		height: 48rem;
+	}
+
+	.carousel-item {
+		// 48 * 1.235714285714286 = 59.31428571428573
+		width: 59.31428571428573rem;
+	}
+}
+
+@include at-least(1280px) {
+	.carousel {
+		height: 56rem;
+	}
+
+	.carousel-item {
+		// 56 * 1.235714285714286
+		width: 69.20000000000002rem;
+		margin-right: 20rem;
+	}
+}
+
+
+/* tweak margin of certain parings of .carousel-item slides
+   ========================================================================== */
+
+.carousel-item + .carousel-item-phone {
+	@include at-least(481px) {
+		margin-left: -3rem;	
+	}
+}

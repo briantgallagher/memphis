@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Resume - styles unique to /resume
+   ========================================================================== */
+
+/* smaller img height for intro image
+   ========================================================================== */
+body[data-page="resume"] {
+	.single-image > img {
+		height: 80%;
+	}
+}
+
+.resume-pdf {
+	&:hover {
+		.icon-pdf {
+			color: $color-green;
+		}
+	}
+
+	.icon-pdf {
+		vertical-align: -.4rem;
+		font-size: 3.2rem;
+		transition: .3s color ease-out;
+	}
+}

@@ -1,0 +1,27 @@
+<svg version="1.1" id="homepage-2011" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="213px" height="128px" viewBox="0 0 213 128" enable-background="new 0 0 213 128" xml:space="preserve">
+
+	 <!-- top tab -->
+	<g>
+		<path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M78.383,28.895l-8.257,14.032
+		c-0.558,0.948-1.914,1.724-3.014,1.724H3c-1.1,0-2-0.9-2-2V15c0-1.1,0.9-2,2-2h64.111c1.1,0,2.454,0.777,3.008,1.728L78.383,28.895
+		"/>
+	</g>
+
+	<!-- second tab -->
+	<g>
+		<path data-duration="22" data-start="8" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M50,80.65H3c-1.1,0-2-0.9-2-2V51
+		c0-1.1,0.9-2,2-2h47"/>
+	</g>
+
+	<!-- third tab -->
+	<g>
+		<path data-duration="22" data-start="8" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M50,116.651H3c-1.1,0-2-0.9-2-2V87
+		c0-1.1,0.9-2,2-2h47"/>
+	</g>
+	<polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" points="50,13 50,1 212,1 212,127 50,127 
+	50,44.651 "/>
+	<polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" points="55,44.651 55,122 207,122 207,6 55,6 55,13 "/>
+	<polyline fill="none" stroke="#000000" stroke-linecap="square" points="56,44.651 56,121 206,121 206,7 56,7 56,13 "/>
+
+</svg>

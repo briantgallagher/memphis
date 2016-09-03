@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Stripe - Displays carousel or other main visual content
+   ========================================================================== */
+
+.stripe {
+	overflow: hidden;
+	background-color: $color-white;
+}
+
+
+/* .single-image -- used on page without carousel to display a single image centrally
+   ========================================================================== */
+.single-image {
+	@include flex;
+	@include align-items(center);
+	@include justify-content(center);
+	height: 26rem;
+	max-width: 70rem;
+	margin: 4rem auto;
+
+	@include at-least(481px) {
+		height: 32rem;
+	}
+
+	> img {
+		width: 70%;
+		max-width: 100%;
+
+		@include at-least(481px) {
+			width: 60%;
+		}
+	}
+}
+
+
+/* background svg by page (select by <body data-page=""> attribute)
+   ========================================================================== */
+.stripe {
+	background-image: url('../images/backgrounds/sprinkles.svg');
+}
+
+body[data-page="contact"] .stripe {
+	background-image: url('../images/backgrounds/zebra.svg');
+}
+
+body[data-page="resume"] .stripe {
+	background-image: url('../images/backgrounds/leopard.svg');
+}
+
+body[data-page="geico-careers"] .stripe {
+	background-image: url('../images/backgrounds/x.svg');
+}
+
+body[data-page="soccer-timeline"] .stripe {
+	background-image: url('../images/backgrounds/multi.svg');
+}
+
+body[data-page="panorama-viewer"] .stripe {
+	background-image: url('../images/backgrounds/45-degree-stripes.svg');
+}
+
+body[data-page="geico-com-responsive"] .stripe {
+	background-image: url('../images/backgrounds/m-diamonds.svg');
+}
+
+body[data-page="geico-homepage-2011"] .stripe {
+	background-image: url('../images/backgrounds/dot-squares.svg');
+}
+
+body[data-page="geico-portfolio"] .stripe {
+	background-image: url('../images/backgrounds/diamond-fade.svg');
+}

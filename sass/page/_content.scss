@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Content -- text displayed below .stripe
+   ========================================================================== */
+
+/* alter order of content (title, button, text) based on width of screen
+   ========================================================================== */
+.content {
+	@include flex;
+	@include flex-direction(column);
+	max-width: 74rem;
+	padding: 2rem 0;
+	margin: 0 auto;
+
+	@include at-least(561px) {
+		@include flex-direction(row);
+		@include flex-wrap(wrap);
+	}
+	
+	@include at-least(670px) {
+		font-size: 2rem;
+		line-height: 1.58;
+	}
+
+	// styling for hyperlinks in content area
+	a:not(.button) {
+		position: relative;
+		display: inline-block;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			color: $color-green-light;
+
+			&::before, &::after {
+				background: $color-green-light;
+			}
+
+			&::before {
+				bottom: 96%;
+				transition: 0.2s all ease-in;
+			}
+		}
+
+		&:visited {
+			&::before, &::after {
+				background-color: darken($color-green, 15%);
+			}
+		}
+
+		&:visited:hover {
+			&::before, &::after {
+				background-color: $color-green-light;
+			}
+		}
+
+		// pseudo elements to animate the hover effect for <a>
+		&::before, &::after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: .2rem;
+			background: $color-green;
+			content: '';
+			transition: 0.2s all ease-out;
+		}
+	}
+}
+
+/* adjust padding when .controls are present above .content
+   ========================================================================== */
+.controls + .content {
+	@include at-least(561px) {
+		padding: 1rem 0 2rem;
+	}
+}
+
+/* flex elements in the .content block (-visit appearing on carousel pages)
+   ========================================================================== */
+.content-heading, .content-description, .content-visit {
+	padding: 0 1rem;
+
+	@include at-least(561px) {
+		padding: 0 2rem;
+	}
+}
+
+// heading text of page
+.content-heading {
+	h2 {
+		margin: 0 0 .4rem 0;
+		font-size: 2.4rem;
+		color: $color-green;
+	}
+
+	@include at-least(561px) {
+		@include order(1);
+		width: 75%;
+		
+		h2 {
+			font-size: 3rem;
+		}
+	}
+}
+
+.content-description {
+	@include at-least(561px) {
+		@include order(3);
+	}
+
+	@include at-least(769px) {
+		width: 100%;
+	}
+
+	h3 {
+		margin-bottom: 1rem;
+		color: $color-green;
+	}
+
+	h3 + p, h3 + ul {
+		margin-top: 1rem;
+	}
+
+	ul {
+		padding-left: 1rem;
+		list-style-type: none;
+
+		li::before {
+			padding-right: .6rem;
+			vertical-align: -.2rem;
+			font-family: $font-memphis;
+			content: $char-diamond;
+		}
+	}
+}
+
+.content-visit {
+	@include flex;
+	@include align-items(center);
+	@include justify-content(center);
+
+	@include at-least(561px) {
+		@include justify-content(flex-end);
+		@include order(2);
+		width: 25%;
+	}
+}

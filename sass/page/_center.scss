@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Center - Content between <header> and <footer>
+   ========================================================================== */
+
+#center {
+	position: relative;
+	color: $color-white;
+	background-color: $color-grey-dark;
+	transition: .3s -webkit-filter ease-out;
+	transition: .3s filter ease-out;
+	@include filter(initial);
+
+	@include at-least(769px) {
+		margin-top: 5rem;
+	}
+}

@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Buttons - Visit button -- slideshow forward/back are in Flickity partial
+   ========================================================================== */
+
+.button {
+	position: relative;
+	overflow: hidden;
+	border: 0;
+	color: $color-white;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a.button:visited {
+	color: $color-white;
+}
+
+
+/* button with shine animation on hover/focus
+   ========================================================================== */
+.button-shine {
+	width: 80%;
+	border: .2rem solid $color-white;
+	border-radius: .4rem;
+	color: $color-white;
+	background-color: transparent;
+
+	@include at-least(480px) {
+		width: 15rem;
+	}
+
+	&:hover, &:focus {
+		background-color: $color-green;
+
+		// move ::after off the right size of visible area, use transition
+		&::after {
+			right: -50%;
+			transition: all .5s linear;
+
+			@include at-least(480px) {
+				top: 0;
+				right: -5%;
+				transition: all .4s linear;
+			}
+		}
+	}
+
+	// angled ::after shine element, positioned off top left of button; no transition in non-hover
+	&::after {
+		position: absolute;
+		top: -3rem;
+		right: 150%;
+		display: block;
+		width: 40%;
+		height: 10rem;
+		background-color: $color-white;
+		content: '';
+		opacity: .7;
+		transition: none;
+		@include transform(rotate(25deg));
+
+		@include at-least(480px) {
+			top: -11rem;
+			right: 90%;
+			width: 35%;
+			height: 17rem;
+			@include transform(rotate(55deg));
+		}
+	}
+
+	// change button text's appearance
+	span {
+		display: block;
+		padding: .5rem 1rem;
+		font-weight: bold;
+		text-transform: uppercase;
+
+		@include at-least(560px) {
+			font-size: 1.8rem;
+		}
+	}
+}

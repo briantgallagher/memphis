@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Footer - end of page, copyright date
+   ========================================================================== */
+
+footer {
+	@include flex;
+	@include align-items(center);
+	@include justify-content(center);
+	width: 100%;
+	min-width: 32rem;
+	color: $color-white;
+	background-color: $color-grey-dark;
+
+	p {
+		width: 100%;
+		max-width: 74rem;
+		padding: 0 1rem;
+
+		@include at-least(561px) {
+			padding: 0 2rem;
+		}
+
+		img {
+			float: right;
+		}
+	}
+}
+
+// tweak footer's max-width to match wider content on homepage
+body[data-page="homepage"] footer {
+	p {
+		max-width: 112.5rem;
+
+		@include at-least(1145px) {
+			padding: 0;
+		}
+	}
+}

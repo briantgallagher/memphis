@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Font sizing & font declarations
+   ========================================================================== */
+
+/* icon font
+   ========================================================================== */
+@font-face {
+  font-family: 'Memphis';
+  src: url('../fonts/icomoon.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/icomoon.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/icomoon.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/icomoon.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* primary body/headings font
+   ========================================================================== */
+@font-face {
+    font-family: 'Picadilly';
+    src: url('../fonts/picadilly-light-webfont.eot');
+    src: url('../fonts/picadilly-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/picadilly-light-webfont.woff2') format('woff2'),
+         url('../fonts/picadilly-light-webfont.woff') format('woff'),
+         url('../fonts/picadilly-light-webfont.ttf') format('truetype'),
+         url('../fonts/picadilly-light-webfont.svg#picadilly-lightuploaded_file') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Picadilly';
+    src: url('../fonts/picadilly-bold-webfont.eot');
+    src: url('../fonts/picadilly-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/picadilly-bold-webfont.woff2') format('woff2'),
+         url('../fonts/picadilly-bold-webfont.woff') format('woff'),
+         url('../fonts/picadilly-bold-webfont.ttf') format('truetype'),
+         url('../fonts/picadilly-bold-webfont.svg#picadilly-bolduploaded_file') format('svg');    
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* assign fonts to variables
+   ========================================================================== */
+$font-memphis: 'Memphis';
+$font-picadilly: 'Picadilly', sans-serif;
+
+
+/* base 10 sizing
+   ========================================================================== */
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: $font-picadilly;
+	font-size: 1.6rem;
+}
+
+
+/* character shortcuts for icon font
+   ========================================================================== */
+$char-default:    '\e900';
+$char-desktop:    '\e901';
+$char-phone:      '\e902';
+$char-tablet:     '\e903';
+$char-email:      '\e904';
+$char-pdf:        '\e905';
+$char-linkedin:   '\e906';
+$char-tumblr:     '\e907';
+$char-diamond:    '\e908';
+$char-menu:       '\e909';
+$char-close:      '\e90a';
+$char-arrow:      '\e90b';
+
+
+/* icon font styling
+   ========================================================================== */
+.icon {
+  margin-right: 1rem;
+	font-family: $font-memphis;
+	
+
+	&::before {
+		vertical-align: -.2rem;
+  }
+}
+
+/* individual icons declared
+   ========================================================================== */
+.icon-default::before { content: $char-default; }
+.icon-desktop::before { content: $char-desktop; }
+.icon-phone::before { content: $char-phone; }
+.icon-tablet::before { content: $char-tablet; }
+.icon-email::before { content: $char-email; }
+.icon-pdf::before { content: $char-pdf; }
+.icon-linkedin::before { content: $char-linkedin; }
+.icon-tumblr::before { content: $char-tumblr; }
+.icon-diamond::before { content: $char-diamond; }
+.icon-menu::before { content: $char-menu; }
+.icon-close::before { content: $char-close; }
+.icon-arrow::before { content: $char-arrow; }
+
+
+/* shared line-height and font-size for the two primary text areas of the site (.intro-text and .content-description)
+   ========================================================================== */
+.content-description, .intro-text {
+	line-height: 1.5;
+
+	@include at-least(561px) {
+		font-size: 1.8rem;
+	}
+}

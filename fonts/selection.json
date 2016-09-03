@@ -1,0 +1,144 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M960 128h-896c-35.2 0-64 28.8-64 64v640c0 35.2 28.8 64 64 64h896c35.2 0 64-28.8 64-64v-640c0-35.2-28.8-64-64-64zM960 800c0 17.6-14.4 32-32 32h-832c-17.6 0-32-14.4-32-32v-576c0-17.6 14.4-32 32-32h832c17.6 0 32 14.4 32 32v576z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"grid": 0,
+				"tags": [
+					"default"
+				],
+				"colorPermutations": {
+					"12552552551": []
+				}
+			},
+			"attrs": [],
+			"properties": {
+				"order": 11,
+				"id": 0,
+				"prevSize": 32,
+				"code": 59648,
+				"name": "default"
+			},
+			"setIdx": 0,
+			"setId": 2,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
+					"M1005.44 111.808h-986.88c-10.208 0-18.56 8.352-18.56 18.56v647.008c0 10.336 8.352 18.816 18.56 18.816h405.696l-12.128 99.808h-26.688v16.192h253.12v-16.192h-26.688l-12.128-99.776h405.696c10.208 0 18.56-8.48 18.56-18.816v-647.040c0-10.208-8.352-18.56-18.56-18.56zM37.088 148.896h949.792v506.336h-949.792v-506.336z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"grid": 0,
+				"tags": [
+					"desktop"
+				],
+				"colorPermutations": {
+					"12552552551": []
+				}
+			},
+			"attrs": [],
+			"properties": {
+				"order": 12,
+				"id": 1,
+				"prevSize": 32,
+				"code": 59649,
+				"name": "desktop"
+			},
+			"setIdx": 0,
+			"setId": 2,
+			"iconIdx": 1
+		},
+		{
+			"icon": {
+				"paths": [
+					"M699.328 0h-374.656c-41.92 0-76 34.080-76 76v872c0 41.92 34.080 76 76 76h374.688c41.92 0 76-34.080 76-76v-872c-0.032-41.92-34.112-76-76.032-76zM512 992c-17.664 0-32-14.304-32-32s14.336-32 32-32c17.696 0 32 14.304 32 32s-14.304 32-32 32zM735.456 896h-446.912v-800h446.944v800z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"grid": 0,
+				"tags": [
+					"phone"
+				],
+				"colorPermutations": {
+					"12552552551": []
+				}
+			},
+			"attrs": [],
+			"properties": {
+				"order": 15,
+				"id": 4,
+				"prevSize": 32,
+				"code": 59650,
+				"name": "phone"
+			},
+			"setIdx": 0,
+			"setId": 2,
+			"iconIdx": 2
+		},
+		{
+			"icon": {
+				"paths": [
+					"M810.944 0h-597.888c-21.056 0-38.144 17.088-38.144 38.144v947.648c0 21.152 17.088 38.208 38.144 38.208h597.888c21.088 0 38.144-17.056 38.144-38.176v-947.68c0.032-21.056-17.056-38.144-38.144-38.144zM512 992c-17.696 0-32-14.304-32-32s14.304-32 32-32 32 14.304 32 32-14.304 32-32 32zM814.784 896h-605.536v-800h605.536v800z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"grid": 0,
+				"tags": [
+					"tablet"
+				],
+				"colorPermutations": {
+					"12552552551": []
+				}
+			},
+			"attrs": [],
+			"properties": {
+				"order": 14,
+				"id": 3,
+				"prevSize": 32,
+				"code": 59652,
+				"name": "tablet"
+			},
+			"setIdx": 0,
+			"setId": 2,
+			"iconIdx": 3
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showCodes": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"embed": false
+		},
+		"imagePref": {
+			"prefix": "icon-",
+			"png": true,
+			"useClassSelector": true,
+			"color": 0,
+			"bgColor": 16777215
+		},
+		"historySize": 100
+	}
+}

@@ -1,0 +1,35 @@
+<svg version="1.1" id="soccer-ball" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="138px" height="138px" viewBox="0 0 138 138" enable-background="new 0 0 138 138" xml:space="preserve">
+	<polygon fill="none" stroke="#351414" stroke-linejoin="bevel" points="85.069,41.879 95,72.443 69,91.334 43,72.443 52.932,41.879 
+		"/>
+
+	<!-- 8 o'clock -->
+	<path data-duration="10" data-start="0" fill="none" stroke="#351414" stroke-linecap="round" d="M24.711,80.997L0.087,63.163"/>
+	<path data-duration="10" data-start="10" fill="none" stroke="#351414" stroke-linecap="round" d="M0.087,63.163C0.031,64.304,0,65.451,0,66.606
+		c0,16.398,5.731,31.452,15.285,43.292"/>
+	<path data-duration="10" data-start="20" fill="none" stroke="#351414" stroke-linecap="round" d="M15.285,109.897l9.426-28.9"/>
+	
+
+	<!-- 11 o'clock -->
+	<path data-duration="10" data-start="0" fill="none" stroke="#351414" stroke-linecap="round" d="M41.628,28.932L50.977,0"/>
+	<path data-duration="10" data-start="10" fill="none" stroke="#351414" stroke-linecap="round" d="M50.977,0C34.439,4.465,20.371,14.918,11.229,28.895"/>
+	<path data-duration="10" data-start="20" fill="none" stroke="#351414" stroke-linecap="round" d="M11.229,28.895l30.399,0.037"/>
+
+
+	<!-- 1 o'clock -->
+	<path data-duration="10" data-start="0" fill="none" stroke="#351414" stroke-linecap="round" d="M96.373,28.932l30.399-0.035"/>
+	<path data-duration="10" data-start="10" fill="none" stroke="#351414" stroke-linecap="round" d="M126.772,28.896c-9.142-13.978-23.21-24.431-39.746-28.896"/>
+	<path data-duration="10" data-start="20" fill="none" stroke="#351414" stroke-linecap="round" d="M87.026,0.001l9.347,28.931"/>
+
+	<!-- 4 o'clock -->
+	<path data-duration="10" data-start="0" fill="none" stroke="#351414" stroke-linecap="round" d="M113.29,80.998l9.425,28.9"/>
+	<path data-duration="10" data-start="10" fill="none" stroke="#351414" stroke-linecap="round" d="M122.715,109.898C132.269,98.059,138,83.005,138,66.606
+		c0-1.154-0.031-2.301-0.087-3.441"/>
+	<path data-duration="10" data-start="20" fill="none" stroke="#351414" stroke-linecap="round" d="M137.913,63.165L113.29,80.998"/>
+
+	<!-- 6 o'clock -->
+	<path data-duration="10" data-start="0" fill="none" stroke="#351414" stroke-linecap="round" d="M69,113.176l-24.568,17.911"/>
+	<path data-duration="10" data-start="10" fill="none" stroke="#351414" stroke-linecap="round" d="M44.432,131.087c7.635,2.911,15.912,4.52,24.569,4.52
+		c8.656,0,16.933-1.608,24.567-4.519"/>
+	<path data-duration="10" data-start="20" fill="none" stroke="#351414" stroke-linecap="round" d="M93.568,131.088L69,113.176"/>
+</svg>

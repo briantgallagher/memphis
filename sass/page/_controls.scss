@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Controls - Below slideshow, buttons to highlight which slide is displayed
+   ========================================================================== */
+
+/* .controls containing div has grey background until 560px
+   ========================================================================== */
+.controls {
+	@include at-most(560px) {
+		background-color: $color-grey-light;
+	}
+}
+
+/* <ul> containing the custom controls for the carousel
+   ========================================================================== */
+#carousel-controls {
+	@include flex;
+	@include justify-content(center);
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	counter-reset: carousel;
+
+	li {
+		padding: 1rem .75rem;
+		color: $color-grey-dark;
+		cursor: pointer;
+
+		@include at-least(561px) {
+			margin-right: 1.5rem;
+			padding: 1rem 0 0;
+		}
+		
+		&:last-child {
+			@include at-least(561px) {
+				margin-right: 0;
+			}
+		}
+
+		// highlight currently displayed item
+		&.is-selected {
+			@include at-most(560px) {
+				background-color: $color-grey-dark;
+
+				a {
+					color: $color-grey-light;
+
+					.carousel-control::after {
+						background-color: $color-grey-dark;
+					}
+				}
+			}
+			
+			@include at-least(561px) {
+				a {
+					color: $color-white;
+				}
+			}
+		}
+
+		a {
+			color: $color-grey-dark;
+
+			&:hover {
+				color: $color-green;
+			}
+
+			@include at-least(561px) {
+				color: $color-grey-mid;
+			}
+		}
+	}
+}
+
+/* <span> displaying the actual control
+   ========================================================================== */
+.carousel-control {
+	position: relative;
+	font-size: 2.4rem;
+	counter-increment: carousel;
+
+	@include at-least(481px) {
+		font-size: 3.2rem;
+	}
+
+	&::before {
+		font-family: $font-memphis;
+	}	
+
+	// control in default state has numbered pseudo element (from counter carousel)
+	&::after {
+		position: absolute;
+		bottom: .2rem;
+		right: -.1rem;
+		padding: 0 .2rem;
+		border-radius: .2rem;
+		font-size: 1.6rem;
+		content: counter(carousel);
+	}
+}
+
+// do not display counter for elements with device style
+.carousel-control-desktop, .carousel-control-phone, .carousel-control-tablet {
+	&::after {
+		display: none;
+	}
+}
+
+.carousel-control-default {
+	&::before {
+		content: $char-default;
+	}
+}
+
+.carousel-control-desktop {
+	&::before {
+		content: $char-desktop;
+	}
+}
+
+.carousel-control-phone {
+	&::before {
+		content: $char-phone;
+	}
+}
+
+.carousel-control-tablet {
+	&::before {
+		content: $char-tablet;
+	}
+}
+
+
+// target IE11 and adjust margin-top of .controls
+_:-ms-fullscreen, :root .controls { margin-top: -0.2rem; }

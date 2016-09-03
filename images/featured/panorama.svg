@@ -1,0 +1,67 @@
+<svg version="1.1" id="panorama" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="213px" height="128px" viewBox="0 0 213 128" enable-background="new 0 0 213 128" xml:space="preserve">
+
+	<!-- right border -->
+	<polyline fill="none" stroke="#000000" stroke-linecap="round" points="106.046,23.927 212,23.927 212,103.694 106.046,103.694 "/>
+
+	<!-- left border -->
+	<polyline fill="none" stroke="#000000" stroke-linecap="round" points="106.046,23.927 1,23.927 1,103.694  106.046,103.694 "/>
+
+	<!-- mountain stroke (to right) -->
+	<line data-duration="7" data-start="0" fill="none" stroke="#000000" stroke-linecap="round" x1="106.046" y1="77.067" x2="143.021" y2="40.093"/>
+	<line data-duration="7" data-start="7" fill="none" stroke="#000000" stroke-linecap="round" x1="143.021" y1="40.093" x2="172.32" y2="69.392"/>
+	<line data-duration="7" data-start="14" fill="none" stroke="#000000" stroke-linecap="round" x1="172.32" y1="69.392" x2="191.435" y2="50.276"/>
+	<line data-duration="7" data-start="21" fill="none" stroke="#000000" stroke-linecap="round" x1="191.435" y1="50.276" x2="212" y2="70.843"/>
+
+	<!-- mountain stroke (to left) -->
+	<line data-duration="7" data-start="0" fill="none" stroke="#000000" stroke-linecap="round" x1="106.046" y1="77.067" x2="77.774" y2="48.795"/>
+	<line data-duration="7" data-start="7" fill="none" stroke="#000000" stroke-linecap="round" x1="77.774" y1="48.795" x2="58.45" y2="68.118"/>
+	<line data-duration="7" data-start="14" fill="none" stroke="#000000" stroke-linecap="round" x1="58.45" y1="68.118" x2="25.396" y2="35.063"/>
+	<line data-duration="7" data-start="21" fill="none" stroke="#000000" stroke-linecap="round" x1="25.396" y1="35.063" x2="1" y2="59.458"/>
+
+	<!-- mountain shadow (non-masked) -->
+	<line data-duration="23" data-start="7" fill="none" stroke="#000000" stroke-linecap="round" x1="106.046" y1="100.204" x2="3.972" y2="100.204"/>
+	<line data-duration="23" data-start="7" fill="none" stroke="#000000" stroke-linecap="round" x1="106.047" y1="100.204" x2="209.027" y2="100.204"/>
+	<line data-duration="23" data-start="7" fill="none" stroke="#000000" stroke-linecap="round" x1="106.046" y1="93.6" x2="3.972" y2="93.6"/>
+	<line data-duration="23" data-start="7" fill="none" stroke="#000000" stroke-linecap="round" x1="106.047" y1="93.6" x2="209.027" y2="93.6"/>
+	<line data-duration="23" data-start="7" fill="none" stroke="#000000" stroke-linecap="round" x1="106.046" y1="86.996" x2="3.972" y2="86.996"/>
+	<line data-duration="23" data-start="7" fill="none" stroke="#000000" stroke-linecap="round" x1="106.047" y1="86.996" x2="209.027" y2="86.996"/>
+	
+	<g>
+		<defs>
+			<polygon id="SVGID_1_" points="1,63.421 25.396,39.025 58.45,72.08 77.774,52.757 106.046,81.029 143.021,44.056 172.32,73.354 
+				191.435,54.239 212,74.806 212,82.788 1,82.788 		"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.046" y1="80.393" x2="3.972" y2="80.393"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.047" y1="80.393" x2="209.027" y2="80.393"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.046" y1="73.788" x2="3.972" y2="73.788"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.047" y1="73.788" x2="209.027" y2="73.788"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.046" y1="67.185" x2="3.972" y2="67.185"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.047" y1="67.185" x2="209.027" y2="67.185"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.046" y1="60.58" x2="3.972" y2="60.58"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.047" y1="60.58" x2="209.027" y2="60.58"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.046" y1="53.976" x2="3.972" y2="53.976"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.047" y1="53.976" x2="209.027" y2="53.976"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.046" y1="47.372" x2="3.972" y2="47.372"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.047" y1="47.372" x2="209.027" y2="47.372"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.046" y1="40.768" x2="3.972" y2="40.768"/>
+		
+			<line data-duration="23" data-start="7" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-linecap="round" x1="106.047" y1="40.768" x2="209.027" y2="40.768"/>
+	</g>
+</svg>

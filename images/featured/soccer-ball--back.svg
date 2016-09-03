@@ -1,0 +1,19 @@
+<svg version="1.1" id="soccer-ball" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="138px" height="138px" viewBox="0 0 138 138" enable-background="new 0 0 138 138" xml:space="preserve">
+<polygon fill="none" stroke="#FFFFFF" points="69,91.334 43,72.443 52.932,41.879 85.069,41.879 95,72.443"/>
+
+<!-- bottom left -->
+<path fill="none" stroke="#FFFFFF" d="M15.285,109.897l9.426-28.9L0.087,63.163C0.031,64.304,0,65.451,0,66.606
+	C0,83.004,5.731,98.058,15.285,109.897z"/>
+
+<path fill="none" stroke="#FFFFFF" d="M11.229,28.895l30.399,0.037L50.977,0C34.439,4.465,20.371,14.918,11.229,28.895z"/>
+
+<path fill="none" stroke="#FFFFFF" d="M126.772,28.896c-9.142-13.978-23.21-24.431-39.746-28.896l9.347,28.931L126.772,28.896z"/>
+
+<path fill="none" stroke="#FFFFFF" d="M122.715,109.898C132.269,98.059,138,83.005,138,66.606c0-1.154-0.031-2.301-0.087-3.441
+	L113.29,80.998L122.715,109.898z"/>
+
+<path fill="none" stroke="#FFFFFF" d="M93.568,131.088L69,113.176l-24.568,17.911c7.635,2.911,15.912,4.52,24.569,4.52
+	C77.657,135.606,85.934,133.998,93.568,131.088z"/>
+
+</svg>

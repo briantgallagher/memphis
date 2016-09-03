@@ -1,0 +1,42 @@
+/**
+ *	
+ *	New portfolio layout - "Memphis"
+ *	
+ */
+
+  /* ==========================================================================
+   Import structural/high-level partials
+   ========================================================================== */
+   @import 'base/_reset';
+   @import 'base/_breakpoints';
+   @import 'base/_css-shortcuts';
+   @import 'base/_colors';
+   @import 'base/_typography';
+
+   /* ==========================================================================
+   Import page component partials
+   ========================================================================== */
+   @import 'page/_start';
+   @import 'page/_wrap';
+   @import 'page/_header';
+   @import 'page/_menu';
+   @import 'page/_center';
+   @import 'page/_stripe';
+   @import 'page/_carousel';
+   @import 'page/_lower';
+   @import 'page/_controls';
+   @import 'page/_content';
+   @import 'page/_buttons';
+   @import 'page/_footer';
+
+   /* ==========================================================================
+   Import specific page partials
+   ========================================================================== */
+   @import 'page/template/_home';
+   @import 'page/template/_contact';
+   @import 'page/template/_resume';
+
+   /* ==========================================================================
+   External Plugin Stylesheets
+   ========================================================================== */
+   @import 'plugins/_flickity';

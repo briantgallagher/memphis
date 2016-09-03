@@ -1,0 +1,11 @@
+/* ==========================================================================
+   Wrap - Wrapping div/container styling around page content
+   ========================================================================== */
+
+#wrap {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-width: 32rem;
+	color: $color-white;
+}

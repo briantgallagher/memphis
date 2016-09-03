@@ -1,0 +1,368 @@
+/* ==========================================================================
+   Menu - side nav & top nav
+   ========================================================================== */
+
+   // segment css between small size side menu (<= 768px) and large-size top menu (>= 769px) where necessary
+
+
+/* .menu-active state -- limit height/blur when menu is open
+   ========================================================================== */
+body.menu-active {
+	@include at-most(768px) {
+		height: 100%;
+		overflow: hidden;
+		margin-bottom: 0;
+
+		footer {
+			display: none;
+		}
+
+		#center {
+			top: 4rem;
+			@include blur(1px);
+		}
+
+		#header-logo-small {
+			opacity: .5;
+			@include blur(1px);
+		}
+
+		#menu-link {
+			right: 28rem;
+			color: $color-grey-dark;
+			background-color: $color-grey-light;
+
+			&:hover, &:focus {
+				color: $color-white;
+				background-color: $color-green-light;
+			}
+
+			&::before {
+				content: $char-close;
+			}
+		}
+
+		#wrap {
+			height: 100%;
+		}
+	}
+}
+
+
+/* grey bar that contains the menu link icon, hamburger menu sizes only
+   ========================================================================== */
+#mobile-header {
+	@include at-most(768px) {
+		width: 100%;
+		height: 4rem;
+		color: $color-white;
+		background-color: $color-grey-dark;
+
+		body.menu-active & {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	@include at-least(769px) {
+		display: none;
+	}
+}
+
+
+/* link that toggles menu visibility, pushed out by menu when active
+   ========================================================================== */
+#menu-link {
+	position: absolute;
+	z-index: 23;
+	@include flex;
+	@include align-items(center);
+	@include justify-content(center);
+	left: 27.9rem;
+	right: auto;
+	width: 4rem;
+	height: 4rem;
+	color: $color-white;
+	font-family: $font-memphis;
+	text-decoration: none;
+	transition: .3s right ease-out;
+
+	@include at-least(320px) {
+		left: auto;
+		right: 0;
+	}
+
+	&:hover, &:focus {
+		background-color: $color-green-light;
+	}
+
+	&::before {
+		font-size: 3.2rem;
+		content: $char-menu;
+	}
+}
+
+
+/* <header> contains the <nav> menu and the #menu-link
+   ========================================================================== */
+header {
+	@include at-most(768px) {
+
+		&::after {
+			opacity: 0;
+			transition: .3s all ease-out;
+		}
+
+		body.menu-active &::after {
+			position: absolute;
+			z-index: 10;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			content: '';
+			background-color: rgba(0, 0, 0, .2);
+			opacity: 1;
+		}
+	}
+
+	@include at-least(769px) {
+		position: absolute;
+		z-index: 90;
+		top: 0;
+		left: 0;
+		overflow: visible;
+		width: 100%;
+		height: 5rem;
+		background-color: $color-grey-dark;
+
+		&::after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: .3rem;
+			background-color: $color-green;
+			content: '';
+		}
+	}
+}
+
+
+/* <nav> contains the menu elements, slides out from right at small sizes
+   ========================================================================== */
+nav {
+	@include at-most(768px) {
+		position: absolute;
+		z-index: 21;
+		top: 0;
+		right: -28rem;
+		overflow-y: scroll;
+		width: 28rem;
+		height: 100%;
+		background-color: $color-green;
+		background-image: url('../images/backgrounds/diamond-dots.svg');
+		transition: .3s all ease-out;
+
+		body.menu-active & {
+			right: 0;
+		}
+	}
+}
+
+
+/* unordered list of the menu links
+   ========================================================================== */
+#nav-menu {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	li {
+		a {
+			display: block;
+			color: $color-grey-dark;
+			text-decoration: none;
+		}
+
+		a, span {
+			font-weight: bold;
+		}
+	}
+
+	// small breakpoints slide-out menu
+	@include at-most(768px) {
+		width: 100%;
+
+		li {
+			a {
+				color: $color-white;
+
+				&:hover, &:focus {
+					color: $color-white;
+					background-color: $color-grey-dark;
+				}
+
+				&::after {
+					position: absolute;
+					right: 2rem;
+					font-family: $font-memphis;
+					font-size: 2rem;
+					content: $char-arrow;
+				}
+			}
+
+			a, span {
+				display: block;
+				padding: 1.5rem 2rem;
+			}
+
+			ul {
+				padding: 0;
+				list-style: none;
+
+				a {
+					padding-left: 5rem;
+				}
+			}
+		}
+	}
+
+	// large breakpoints dropdown menu
+	@include at-least(769px) {
+		position: absolute;
+		z-index: 91;
+		right: 2rem;
+
+		&::after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: .3rem;
+			background-color: $color-grey-dark;
+			content: '';
+		}
+
+		// on :hover change to 50% opacity
+		&:hover li a, &:hover li span {
+			opacity: .5;
+		}
+
+		// restore 100% opacity for item being hovered
+		&:hover li, &:hover li:hover a, &:hover li:hover span {
+			opacity: 1;
+		}
+
+		// only apply to first level <li> (background "roll up" animation made with pseudo element/background gradient)
+		> li {
+			z-index: 92;
+			background: linear-gradient(rgba($color-green, 0), rgba($color-green, 0) 50%, rgba($color-green, .6) 50%,  rgba($color-green, .6));
+			background-size: auto 200%;
+			transition: .3s all ease-in;
+
+			&:hover {
+				background-position: 0 100%;
+				transition: .3s all ease-out;
+			}
+
+			&:hover::before {
+				bottom: 96%;
+				transition: .3s all ease-out;
+			}
+
+			&::before {
+				position: absolute;
+				//use 0% for unit-matching IE11 animation
+				bottom: 0%;
+				left: 0;
+				width: 100%;
+				height: .3rem;
+				background-color: $color-green;
+				transition: .3s all ease-in;
+				content: '';
+			}
+		}
+
+		// general <li> declarations -- first level and deeper
+		li {
+			position: relative;
+			overflow: visible;
+			float: left;
+
+			&:hover {
+				ul {
+					max-height: 30rem;
+					transition: max-height .4s ease-in;
+				}
+			}
+
+			a, span {
+				height: 5rem;
+				padding: 0 2rem;
+				line-height: 5rem;
+				transition: opacity .3s ease-out;
+			}
+
+			a {
+				color: $color-white;
+			}
+
+			span {
+				display: block;
+			}
+
+			ul {
+				position: absolute;
+				top: 5rem;
+				left: 0;
+				overflow: hidden;
+				max-height: 0;
+				padding: 0;
+				transition: .3s all ease-out;
+				background-color: $color-green;
+			}
+
+			// dropdown menu
+			ul li {
+				float: none;
+				display: block;
+				overflow: hidden;
+
+				a {
+					position: relative;
+					z-index: 1;
+					white-space: nowrap;
+
+					&:hover, &:focus {
+						&::before {
+							width: 100%;
+						}
+					}
+
+					// slide pseudo element over to darken selected menu item
+					&::before {
+						position: absolute;
+						z-index: -1;
+						top: 0;
+						left: 0;
+						display: block;
+						height: 100%;
+						width: 0;
+						background-color: rgba($color-grey-dark, .4);
+						transition: .4s all ease-out;
+						content: '';
+					}
+				}
+			}
+		}
+	}
+
+	// move menu to right = 4rem at largest size
+	@include at-least(1025px) {
+		right: 4rem;
+	}
+}

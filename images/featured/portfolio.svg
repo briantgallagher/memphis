@@ -1,0 +1,15 @@
+<svg version="1.1" id="portfolio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="213px" height="128px" viewBox="0 0 213 128" enable-background="new 0 0 213 128" xml:space="preserve">
+	<g>
+		<path fill="none" stroke="#000000" stroke-linecap="round" d="M101.483,27h62.5c2.2,0,4,1.8,4,4v92c0,2.2-1.8,4-4,4h-62.5"/>
+	</g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-linecap="round" d="M101.483,27h-62.5c-2.2,0-4,1.8-4,4v92c0,2.2,1.8,4,4,4h62.5"/>
+	</g>
+	<path fill="none" stroke="#000000" stroke-linecap="round" d="M75.724,27c0-14.227,11.533-25.76,25.76-25.76
+		s25.76,11.533,25.76,25.76"/>
+	<path fill="none" stroke="#000000" stroke-linecap="round" d="M119.243,27c0-9.809-7.951-17.76-17.76-17.76
+		c-9.808,0-17.76,7.951-17.76,17.76"/>
+	<polyline fill="none" stroke="#000000" points="34.983,44.51 101.483,53.819 167.983,44.51 "/>
+	<polyline fill="none" stroke="#000000" points="167.983,50.51 101.483,59.819 34.983,50.51 "/>
+</svg>
