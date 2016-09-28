@@ -39,9 +39,9 @@
 						<div class="content-description">
 							<p>Designed a new layout and produced the <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b> for GEICO.com's homepage. This site was launched in 2011 and retired in late 2012 during a web property rebrand.</p>
 
-							<p>This design focuses on allowing easy access to a user's primary tasks. The tabbed layout allows for significant amounts of real estate to be dedicated to each goal, resulting in clear calls to action and room for supporting information where necessary.</p>
+							<p>The focus of this design is allowing easy access to a visitor's primary tasks. The tabbed layout makes efficient use of space, dedicating a large block of real estate to each goal, resulting in clear calls to action and room for supporting information where necessary.</p>
 
-							<p>Additionally, below the page's primay form area, the company's full range of products are displayed and space for promotional messaging is available.</p>
+							<p>Additionally, below the page's primary form area, the company's full range of products are displayed and space for promotional messaging is available.</p>
 						</div>
 					</section>
 				</section>

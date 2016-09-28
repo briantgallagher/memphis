@@ -5,21 +5,21 @@
   <clipPath id="SVGID_2_">
     <use xlink:href="#SVGID_1_" overflow="visible"/>
   </clipPath>
-  <circle clip-path="url(#SVGID_2_)" fill="#E4E4E4" cx="33.5" cy="33.5" r="5.025"/>
+  <circle clip-path="url(#SVGID_2_)" fill="#EFEFEF" cx="33.5" cy="33.5" r="5.025"/>
   <defs>
     <path id="SVGID_3_" d="M0 0h67v67H0z"/>
   </defs>
   <clipPath id="SVGID_4_">
     <use xlink:href="#SVGID_3_" overflow="visible"/>
   </clipPath>
-  <circle clip-path="url(#SVGID_4_)" fill="#E4E4E4" cx="67" cy="33.5" r="2.513"/>
+  <circle clip-path="url(#SVGID_4_)" fill="#EFEFEF" cx="67" cy="33.5" r="2.513"/>
   <defs>
     <path id="SVGID_5_" d="M0 0h67v67H0z"/>
   </defs>
   <clipPath id="SVGID_6_">
     <use xlink:href="#SVGID_5_" overflow="visible"/>
   </clipPath>
-  <circle clip-path="url(#SVGID_6_)" fill="#E4E4E4" cx="33.5" r="2.513"/>
+  <circle clip-path="url(#SVGID_6_)" fill="#EFEFEF" cx="33.5" r="2.513"/>
   <g>
     <defs>
       <path id="SVGID_7_" d="M0 0h67v67H0z"/>
@@ -27,7 +27,7 @@
     <clipPath id="SVGID_8_">
       <use xlink:href="#SVGID_7_" overflow="visible"/>
     </clipPath>
-    <circle clip-path="url(#SVGID_8_)" fill="#E4E4E4" cx=".217" cy="33.5" r="2.513"/>
+    <circle clip-path="url(#SVGID_8_)" fill="#EFEFEF" cx=".217" cy="33.5" r="2.513"/>
   </g>
   <g>
     <defs>
@@ -36,7 +36,7 @@
     <clipPath id="SVGID_10_">
       <use xlink:href="#SVGID_9_" overflow="visible"/>
     </clipPath>
-    <circle clip-path="url(#SVGID_10_)" fill="#E4E4E4" cx="33.5" cy="66.999" r="2.513"/>
+    <circle clip-path="url(#SVGID_10_)" fill="#EFEFEF" cx="33.5" cy="66.999" r="2.513"/>
   </g>
   <g>
     <defs>
@@ -45,7 +45,7 @@
     <clipPath id="SVGID_12_">
       <use xlink:href="#SVGID_11_" overflow="visible"/>
     </clipPath>
-    <circle clip-path="url(#SVGID_12_)" fill="#E4E4E4" cx="67" r="5.025"/>
+    <circle clip-path="url(#SVGID_12_)" fill="#EFEFEF" cx="67" r="5.025"/>
   </g>
   <g>
     <defs>
@@ -54,7 +54,7 @@
     <clipPath id="SVGID_14_">
       <use xlink:href="#SVGID_13_" overflow="visible"/>
     </clipPath>
-    <circle clip-path="url(#SVGID_14_)" fill="#E4E4E4" r="5.025"/>
+    <circle clip-path="url(#SVGID_14_)" fill="#EFEFEF" r="5.025"/>
   </g>
   <g>
     <defs>
@@ -63,7 +63,7 @@
     <clipPath id="SVGID_16_">
       <use xlink:href="#SVGID_15_" overflow="visible"/>
     </clipPath>
-    <circle clip-path="url(#SVGID_16_)" fill="#E4E4E4" cy="67" r="5.025"/>
+    <circle clip-path="url(#SVGID_16_)" fill="#EFEFEF" cy="67" r="5.025"/>
   </g>
   <g>
     <defs>
@@ -72,6 +72,6 @@
     <clipPath id="SVGID_18_">
       <use xlink:href="#SVGID_17_" overflow="visible"/>
     </clipPath>
-    <circle clip-path="url(#SVGID_18_)" fill="#E4E4E4" cx="67" cy="67" r="5.025"/>
+    <circle clip-path="url(#SVGID_18_)" fill="#EFEFEF" cx="67" cy="67" r="5.025"/>
   </g>
 </svg>
