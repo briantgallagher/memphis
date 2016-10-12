@@ -59,6 +59,7 @@ a.button:visited {
 		opacity: .7;
 		transition: none;
 		@include transform(rotate(25deg));
+		pointer-events: none;		
 
 		@include at-least(480px) {
 			top: -11rem;
