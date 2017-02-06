@@ -60,7 +60,7 @@
 
 							<p>The goal of this project was to produce a narrative-style homepage. Comprised of a series of panels, the design informs potential applicants about the company's background and opportunities in various career paths.</p>
 
-							<p>Visitors wishing to learn more about available career paths and the locations of regional offices are able to progress to further information in the site's interior.</p>
+							<p>Visitors wishing to learn more about available opportunities and the locations of regional offices are able to progress to expanded information within the site.</p>
 						</div>
 
 						<div class="content-visit">
