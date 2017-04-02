@@ -8,15 +8,12 @@ html {
 }
 
 body {
-	margin: 0 0 5rem;
+	margin: 0 0 9rem;
 	background-color: $color-grey-dark;
-}
 
-footer {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 5rem;
+	@include at-least(481px) {
+		margin-bottom: 5rem;
+	}
 }
 
 a {

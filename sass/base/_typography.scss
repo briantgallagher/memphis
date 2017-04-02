@@ -71,6 +71,7 @@ $char-diamond:    '\e908';
 $char-menu:       '\e909';
 $char-close:      '\e90a';
 $char-arrow:      '\e90b';
+$char-github:     '\e90c';
 
 
 /* icon font styling
@@ -99,6 +100,7 @@ $char-arrow:      '\e90b';
 .icon-menu::before { content: $char-menu; }
 .icon-close::before { content: $char-close; }
 .icon-arrow::before { content: $char-arrow; }
+.icon-github::before { content: $char-github; }
 
 
 /* shared line-height and font-size for the two primary text areas of the site (.intro-text and .content-description)

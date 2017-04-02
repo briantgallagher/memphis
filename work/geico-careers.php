@@ -56,7 +56,7 @@
 						</div>
 
 						<div class="content-description">
-							<p>Designed a new layout and coded the underlying <b>HTML</b>, <b>CSS (SASS)</b> and <b>PHP</b> for the homepage of GEICO's Careers site.</p>
+							<p>Designed a new layout and coded the underlying <b>HTML</b>, <b>CSS (SASS)</b> and <b>PHP</b> for the homepage of GEICO's careers site.</p>
 
 							<p>The goal of this project was to produce a narrative-style homepage. Comprised of a series of panels, the design informs potential applicants about the company's background and opportunities in various career paths.</p>
 
