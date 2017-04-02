@@ -59,11 +59,15 @@ function get_vivus_var() {
 }
 
 $(document).ready(function(){
+	// add event listener to flag a touch device
+	document.addEventListener('touchstart', function addTouchEvent() {
+		document.body.classList.add('touch-event');
+		document.removeEventListener('touchstart', addTouchEvent, true);
+	}, true);
 
-	// menu toggle
-	$('#menu-link').click(function() {
+	// hamburger menu button
+	$('#menu-link').on('click touchstart', function() {
 		$('body').toggleClass('menu-active');
-		$(this).blur();
 		return false;
 	});
 

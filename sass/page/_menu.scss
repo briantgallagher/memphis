@@ -19,12 +19,10 @@ body.menu-active {
 
 		#center {
 			top: 4rem;
-			@include blur(1px);
 		}
 
 		#header-logo-small {
 			opacity: .5;
-			@include blur(1px);
 		}
 
 		#menu-link {
@@ -97,6 +95,16 @@ body.menu-active {
 		background-color: $color-green-light;
 	}
 
+	body.touch-event &:hover {
+		color: $color-white;
+		background-color: transparent;
+	}
+
+	body.touch-event.menu-active &:hover {
+		color: $color-grey-dark;
+		background-color: $color-white;
+	}
+
 	&::before {
 		font-size: 3.2rem;
 		content: $char-menu;
@@ -123,7 +131,7 @@ header {
 			width: 100%;
 			height: 100%;
 			content: '';
-			background-color: rgba(0, 0, 0, .2);
+			background-color: rgba(0, 0, 0, .5);
 			opacity: 1;
 		}
 	}
