@@ -9,8 +9,8 @@
    ========================================================================== */
 body.menu-active {
 	@include at-most(768px) {
-		height: 100%;
-		overflow: hidden;
+		height: 100vh;
+		overflow: scroll;
 		margin-bottom: 0;
 
 		footer {
