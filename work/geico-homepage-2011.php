@@ -7,19 +7,19 @@
 					<div class="carousel">
 						<figure class="carousel-item is-selected">
 							<img src="/images/frames/default-mask.svg" class="mask" alt="" />
-							<img src="/images/screenshots/geico-homepage-2011-1.jpg" class="screenshot" alt="Screenshot of GEICO homepage" />
+							<img src="/images/screenshots/geico-homepage-2011-1.jpg" class="screenshot" alt="Screenshot of 2011 GEICO homepage" />
 							<img src="/images/frames/default.svg" class="frame" alt="" />				
 						</figure>
 
 						<figure class="carousel-item">
 							<img src="/images/frames/default-mask.svg" class="mask" alt="" />
-							<img src="/images/screenshots/geico-homepage-2011-2.jpg" class="screenshot" alt="Screenshot of GEICO homepage" />
+							<img src="/images/screenshots/geico-homepage-2011-2.jpg" class="screenshot" alt="Screenshot of 2011 GEICO homepage showing policyholder login view" />
 							<img src="/images/frames/default.svg" class="frame" alt="" />				
 						</figure>
 
 						<figure class="carousel-item">
 							<img src="/images/frames/default-mask.svg" class="mask" alt="" />
-							<img src="/images/screenshots/geico-homepage-2011-3.jpg" class="screenshot" alt="Screenshot of GEICO homepage" />
+							<img src="/images/screenshots/geico-homepage-2011-3.jpg" class="screenshot" alt="Screenshot of 2011 GEICO homepage showing claims view" />
 							<img src="/images/frames/default.svg" class="frame" alt="" />				
 						</figure>
 					</div>
