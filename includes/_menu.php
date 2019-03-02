@@ -4,7 +4,7 @@
 						<li>
 							<span>Work</span>
 							<ul>
-								<li><a href="/work/geico-com-responsive">GEICO.com Responsive</a></li>
+								<li><a href="/work/geico-com-product">GEICO.com Product</a></li>
 								<li><a href="/work/amoskeag-flag">Amoskeag Flag</a></li>
 								<li><a href="/work/panorama-viewer">Panorama Viewer</a></li>
 								<li><a href="/work/soccer-timeline">MLS Timeline</a></li>
