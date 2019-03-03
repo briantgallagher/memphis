@@ -98,6 +98,11 @@
 		@include flex-wrap(wrap);
 	}
 
+	@include between(641px, 1124px) {
+		max-width:  74.1rem;
+		justify-content: flex-start;
+	}
+
 	@include at-least(1145px) {
 		padding: 3rem 0;
 	}
@@ -139,10 +144,14 @@
 
 	&:last-child {
 		margin-bottom: 0;
+
+		@include at-least(1125px) {
+			margin-left: 3rem;
+		}
 	}
 
 	&:nth-of-type(even) {
-		@include between(641px, 1124px) {
+		@include between(741px, 1124px) {
 			margin-right: 0;
 		}
 	}
