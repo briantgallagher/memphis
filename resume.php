@@ -21,7 +21,7 @@
 							<h3>Employment</h3>
 
 							<ul>
-								<li>Senior Programmer/Analyst II, GEICO, Chevy Chase, MD</li>
+								<li>Senior Web Developer, GEICO, Chevy Chase, MD</li>
 								<li>Consultant, Cruview, LLC, Washington, DC</li>
 								<li>Web Support, Hydra Head Records, Los Angeles, CA</li>
 								<li>Intern, Mercedes-Benz USA, Montvale, NJ</li>
