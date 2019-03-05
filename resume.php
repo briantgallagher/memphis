@@ -30,7 +30,7 @@
 
 							<h3>Skills</h3>
 
-							<p>Front-end web development, responsive design, cross browser compatible <b>HTML</b> and <b>CSS</b>, MVC design pattern <b>PHP</b>, layout and graphic design with <b>Illustrator</b> and <b>Photoshop</b>, <b>JavaScript</b> and <b>jQuery</b>, <b>SASS</b>, <b>WordPress</b>, <b>Google Analytics</b></p>
+							<p>Front-end web development, responsive design, cross browser compatible <b>HTML</b> and <b>CSS</b>, MVC design pattern <b>PHP</b>, layout and graphic design with <b>Illustrator</b> and <b>Photoshop</b>, <b>JavaScript</b> and <b>jQuery</b>, <b>Sass</b>, <b>WordPress</b>, <b>Google Analytics</b></p>
 
 							<h3>Education</h3>
 
