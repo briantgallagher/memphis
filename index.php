@@ -12,9 +12,9 @@
 						<div class="intro-text">
 							<h2>Web Developer, Designer</h2>
 
-							<p>I am a versatile web developer and designer with over a decade of experience building excellent web experiences for clients ranging from large corporations to small businesses.</p>
+							<p>I am a versatile creative professional with over a decade of experience building excellent web experiences for clients ranging from large corporations to small businesses.</p>
 
-							<p>My specialty is front-end development, working with <b>HTML</b>, <b>CSS (Sass)</b> and <b>JavaScript</b> (plus the <b>jQuery</b> framework).  I also have experience architecting applications in the <b>PHP</b> language, including popular packages such as the CodeIgniter framework and WordPress.</p>
+							<p>My specialties include front-end development (working with <b>HTML</b>, <b>CSS</b>, <b>Sass</b> and <b>JavaScript</b>) and design (building new interfaces or tweaking components to improve user experience).  I also have experience architecting applications in <b>PHP</b>, including popular packages such as the CodeIgniter framework and WordPress.</p>
 
 							<p>I attended <b>Rochester Institute of Technology</b> where I received a Bachelor of Science degree in Information Technology with New Media Option and a minor in Communication. In addition to my current position, I have also had the pleasure of working at <b>Cruview</b>, <b>Hydra Head Records</b>, <b>Mercedes-Benz USA</b> and <b>Dalina, Inc</b>.</p>
 						</div>
