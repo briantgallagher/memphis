@@ -21,11 +21,11 @@
 							<h3>Employment</h3>
 
 							<ul>
-								<li>Senior Web Developer, GEICO, Chevy Chase, MD</li>
-								<li>Consultant, Cruview, LLC, Washington, DC</li>
-								<li>Web Support, Hydra Head Records, Los Angeles, CA</li>
-								<li>Intern, Mercedes-Benz USA, Montvale, NJ</li>
-								<li>Web Developer, Dalina, Inc, Nashua, NH</li>
+								<li>Senior Web Developer &ndash; GEICO, Chevy Chase, MD</li>
+								<li>Consultant &ndash; Cruview, LLC, Washington, DC</li>
+								<li>Web Support &ndash; Hydra Head Records, Los Angeles, CA</li>
+								<li>Intern &ndash; Mercedes-Benz USA, Montvale, NJ</li>
+								<li>Web Developer &ndash; Dalina, Inc., Nashua, NH</li>
 							</ul>
 
 							<h3>Skills</h3>
