@@ -11,7 +11,7 @@
 							<img src="/images/frames/desktop.svg" class="frame" alt="" />
 						</figure>
 
-						<figure class="carousel-item carousel-item-desktop is-selected">
+						<figure class="carousel-item carousel-item-desktop">
 							<img src="/images/frames/desktop-mask.svg" class="mask" alt="" />
 							<img src="/images/screenshots/geico-product-desktop-2.jpg" class="screenshot" alt="Screenshot of GEICO website on desktop, showing login view" />
 							<img src="/images/frames/desktop.svg" class="frame" alt="" />
@@ -53,7 +53,7 @@
 						<div class="content-description">
 							<p>Designed the visual layout and coded the associated <b>HTML</b>, <b>CSS</b> and <b>PHP</b> logic for GEICO.com's insurance product pages.</p>
 
-							<p>A recent revision focuses on presenting visitors an internal landing page with primary transactions at the forefront.  The resulting look has been successful in raising key conversion metrics, quote starts and policy logins, for the site's highest traffic pages.</p>
+							<p>A recent revision focuses on presenting visitors an internal landing page with primary transactions at the forefront.  The resulting look has been successful in raising key conversion metrics (quote starts and policyholder logins) for the site's highest traffic pages.</p>
 
 							<p>Additionally, users seeking information about insurance can learn more about the coverages, benefits and discounts available in the sections below the banner area.</p>
 						</div>
