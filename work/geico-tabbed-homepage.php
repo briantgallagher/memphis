@@ -1,4 +1,4 @@
-<?php $title = 'GEICO Homepage 2011'; ?>
+<?php $title = 'GEICO Tabbed Homepage'; ?>
 
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/_header.php'); ?>
 
@@ -7,19 +7,19 @@
 					<div class="carousel">
 						<figure class="carousel-item is-selected">
 							<img src="/images/frames/default-mask.svg" class="mask" alt="" />
-							<img src="/images/screenshots/geico-homepage-2011-1.jpg" class="screenshot" alt="Screenshot of 2011 GEICO homepage" />
+							<img src="/images/screenshots/geico-tabbed-homepage-1.jpg" class="screenshot" alt="Screenshot of GEICO homepage" />
 							<img src="/images/frames/default.svg" class="frame" alt="" />				
 						</figure>
 
 						<figure class="carousel-item">
 							<img src="/images/frames/default-mask.svg" class="mask" alt="" />
-							<img src="/images/screenshots/geico-homepage-2011-2.jpg" class="screenshot" alt="Screenshot of 2011 GEICO homepage showing policyholder login view" />
+							<img src="/images/screenshots/geico-tabbed-homepage-2.jpg" class="screenshot" alt="Screenshot of GEICO homepage showing policyholder login view" />
 							<img src="/images/frames/default.svg" class="frame" alt="" />				
 						</figure>
 
 						<figure class="carousel-item">
 							<img src="/images/frames/default-mask.svg" class="mask" alt="" />
-							<img src="/images/screenshots/geico-homepage-2011-3.jpg" class="screenshot" alt="Screenshot of 2011 GEICO homepage showing claims view" />
+							<img src="/images/screenshots/geico-tabbed-homepage-3.jpg" class="screenshot" alt="Screenshot of GEICO homepage showing claims view" />
 							<img src="/images/frames/default.svg" class="frame" alt="" />				
 						</figure>
 					</div>
@@ -33,11 +33,11 @@
 
 					<section class="content">
 						<div class="content-heading">
-							<h2>GEICO Homepage 2011</h2>
+							<h2>GEICO Tabbed Homepage</h2>
 						</div>
 
 						<div class="content-description">
-							<p>Designed a new layout and produced the <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b> for GEICO.com's homepage. This site was launched in 2011 and retired in late 2012 during a web property rebrand.</p>
+							<p>Designed a new visual layout and produced the <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b> for GEICO.com's homepage.</p>
 
 							<p>The focus of this design is allowing easy access to a visitor's primary tasks. The tabbed layout makes efficient use of space, dedicating a large block of real estate to each goal, resulting in clear calls to action and room for supporting information where necessary.</p>
 

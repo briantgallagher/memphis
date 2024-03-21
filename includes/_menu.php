@@ -9,7 +9,7 @@
 								<li><a href="/work/panorama-viewer">Panorama Viewer</a></li>
 								<li><a href="/work/soccer-timeline">MLS Timeline</a></li>
 								<li><a href="/work/geico-careers">GEICO Careers</a></li>
-								<li><a href="/work/geico-homepage-2011">GEICO Homepage 2011</a></li>
+								<li><a href="/work/geico-tabbed-homepage">GEICO Homepage</a></li>
 								<li><a href="/work/geico-portfolio">GEICO Portfolio</a></li>
 							</ul>
 						</li>

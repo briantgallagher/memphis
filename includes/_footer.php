@@ -8,7 +8,6 @@
 					<p>
 						<a href="http://www.linkedin.com/in/btgallagher"><span class="icon icon-linkedin"></span></a> 
 						<a href="https://github.com/briantgallagher"><span class="icon icon-github"></span></a>
-						<a href="http://briantgallagher.tumblr.com"><span class="icon icon-tumblr"></span></a>
 					</p>
 				</div>
 			</div>

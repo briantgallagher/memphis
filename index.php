@@ -10,13 +10,13 @@
 						</div>
 
 						<div class="intro-text">
-							<h2>Web Developer, Designer</h2>
+							<h2>Senior Software Engineer, Web Designer</h2>
 
-							<p>I am a versatile creative professional with over a decade of experience building excellent web experiences for clients ranging from large corporations to small businesses.</p>
+							<p>I am a versatile creative professional with two decades of experience building high-performing, responsive websites for clients ranging from major corporations to small businesses and startups.</p>
 
-							<p>My specialties include front-end development (working with <b>HTML</b>, <b>CSS</b>, <b>Sass</b> and <b>JavaScript</b>), design (composing new interfaces and tweaking components to improve user experience) and site performance optimization.  I also have experience architecting applications in <b>PHP</b>, including popular packages such as the CodeIgniter framework and WordPress.</p>
+							<p>My specialties include full-stack development, front-end coding working with <b>HTML</b>, <b>CSS</b>, <b>Sass</b> and <b>JavaScript</b>, user interface design and site performance optimization. I also have experience architecting applications in <b>PHP</b>, including popular content management systems such as WordPress and Webflow.</p>
 
-							<p>I attended <b>Rochester Institute of Technology</b> where I received a Bachelor of Science degree in Information Technology with New Media Option and a minor in Communication. In addition to my current position, I have also had the pleasure of working at <b>Cruview</b>, <b>Hydra Head Records</b>, <b>Mercedes-Benz USA</b> and <b>Dalina, Inc</b>.</p>
+							<p>I attended <b>Rochester Institute of Technology</b> where I received a Bachelor of Science degree in Information Technology with New Media Option and a minor in Communication. Over the years, I have had the pleasure of working with a variety of organizations including <b>Censo</b>, <b>GEICO</b>, <b>Cruview</b>, <b>Hydra Head Records</b> and <b>Mercedes-Benz USA</b>.</p>
 						</div>
 					</div>					
 				</section>
@@ -92,14 +92,14 @@
 						</figure>
 
 						<figure class="featured-item">
-							<a href="/work/geico-homepage-2011">
-								<img src="/images/featured/geico-homepage-2011.jpg" alt="Screenshot of GEICO Homepage 2011" />
+							<a href="/work/geico-tabbed-homepage">
+								<img src="/images/featured/geico-tabbed-homepage.jpg" alt="Screenshot of GEICO Tabbed Homepage" />
 								<figcaption>
-									<span>GEICO Homepage 2011</span>
+									<span>GEICO Tabbed Homepage</span>
 								</figcaption>
 								
 								<div class="animation">
-									<?php if(file_exists($d . '/images/featured/homepage-2011.svg')) { echo file_get_contents($d . '/images/featured/homepage-2011.svg'); } ?>
+									<?php if(file_exists($d . '/images/featured/geico-homepage.svg')) { echo file_get_contents($d . '/images/featured/geico-homepage.svg'); } ?>
 								</div>
 							</a>
 						</figure>
