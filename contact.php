@@ -22,8 +22,6 @@
 								<li id="linkedin"><p><span class="icon icon-linkedin"></span><b>LinkedIn</b> <span class="contact-dash">&ndash;</span> <a href="http://www.linkedin.com/in/btgallagher">linkedin.com/in/btgallagher</a></p></li>
 
 								<li id="github"><p><span class="icon icon-github"></span><b>GitHub</b> <span class="contact-dash">&ndash;</span> <a href="https://github.com/briantgallagher">github.com/briantgallagher</a></p></li>
-								
-								<li id="tumblr"><p><span class="icon icon-tumblr"></span><b>Tumblr</b> <span class="contact-dash">&ndash;</span> <a href="http://briantgallagher.tumblr.com">briantgallagher.tumblr.com</a> <span class="contact-dash">&ndash;</span> design &amp; inspiration microblog</p></li>
 		                	</ul>
 						</div>
 					</section>
