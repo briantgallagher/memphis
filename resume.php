@@ -18,19 +18,9 @@
 						<div class="content-description">
 							<p class="resume-pdf"><span class="icon icon-pdf"></span> My full resume is available to view in <a href="/files/bgallagher.pdf">PDF format</a>.</p>
 
-							<h3>Employment</h3>
-
-							<ul>
-								<li>Senior Web Developer &ndash; GEICO, Chevy Chase, MD</li>
-								<li>Consultant &ndash; Cruview, LLC, Washington, DC</li>
-								<li>Web Support &ndash; Hydra Head Records, Los Angeles, CA</li>
-								<li>Intern &ndash; Mercedes-Benz USA, Montvale, NJ</li>
-								<li>Web Developer &ndash; Dalina, Inc., Nashua, NH</li>
-							</ul>
-
 							<h3>Skills</h3>
 
-							<p>Front-end web development, responsive design, cross browser compatible <b>HTML</b> and <b>CSS</b>, MVC design pattern <b>PHP</b>, layout and graphic design with <b>Illustrator</b> and <b>Photoshop</b>, <b>JavaScript</b> and <b>jQuery</b>, <b>Sass</b>, <b>WordPress</b>, <b>Google Analytics</b></p>
+							<p>Front-end web development, responsive design, cross browser compatible <b>HTML</b> and <b>CSS</b>, <b>Sass</b>, MVC design pattern <b>PHP</b>, layout and graphic design with <b>Illustrator</b> and <b>Photoshop</b>, <b>JavaScript</b> and <b>jQuery</b>, <b>Sass</b>, <b>WordPress</b>, <b>Webflow</b>, <b>MySQL</b>, <b>Google Analytics</b>, <b>Google Tag Manager</b></p>
 
 							<h3>Education</h3>
 
